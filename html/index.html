@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>3D Mechanical Watch - Cinematic Canvas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-text">LOADING</div>
+            <div id="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <div class="sticky-container">
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-step="0">Overview</a>
+                <a href="#" class="nav-link" data-step="1">Materials</a>
+                <a href="#" class="nav-link" data-step="2">Movement</a>
+                <a href="#" class="nav-link" data-step="3">Pricing</a>
+                <div class="nav-underline"></div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div id="menu-sidebar" class="sidebar-drawer">
+            <div class="sidebar-drawer-content">
+                <h2 class="sidebar-main-title">menu</h2>
+                <div class="sidebar-divider"></div>
+                <div class="sidebar-menu-items">
+                    <a href="#" id="credit-btn" class="sidebar-item">credit</a>
+                    <a href="#" id="profile-btn" class="sidebar-item">profile</a>
+                </div>
+            </div>
+        </div>
+
+        <canvas id="canvas-video"></canvas>
+
+        <div class="hotbar">
+            <div class="hotbar-dot active"></div>
+            <div class="hotbar-dot"></div>
+            <div class="hotbar-dot"></div>
+            <div class="hotbar-dot"></div>
+            <div class="hotbar-dot"></div>
+        </div>
+
+        <div class="overlay-step" id="step-1">
+            <div class="text-top">
+                <h2>Mechanical Watch 3D</h2>
+            </div>
+            <div class="text-bottom">
+                <p data-text="An Automatic mechanical timepiece featuring a fully skeletonized structure. The entire mechanical engineering is displayed intuitively right on your screen."></p>
+            </div>
+        </div>
+
+        <div class="overlay-step" id="step-2">
+            <div class="text-top">
+                <h2>Premium Materials</h2>
+            </div>
+            <div class="text-bottom">
+                <p data-text="Crafted with a 316L stainless steel case finished in rose gold PVD coating. Features a scratch-resistant domed Sapphire crystal and a handmade genuine leather strap."></p>
+            </div>
+        </div>
+
+        <div class="overlay-step" id="step-3">
+            <div class="text-top">
+                <h2>Mechanical Movement</h2>
+            </div>
+            <div class="text-bottom">
+                <p data-text="Powered by an Automatic movement with 24 jewels for high durability. Operating at a frequency of 21,600 vph, ensuring absolute stability and mechanical precision."></p>
+            </div>
+        </div>
+
+        <div class="overlay-step" id="step-4">
+            <div class="text-top">
+                <h2>Official Pricing</h2>
+            </div>
+            <div class="text-bottom">
+                <p class="price-text" data-text="$1,800 USD"></p>
+                <p data-text="Price includes VAT, complimentary lifetime maintenance, and a 5-year official global warranty."></p>
+            </div>
+        </div>
+
+        <div class="overlay-step" id="step-5">
+            <div></div>
+            <div class="text-bottom">
+                <p data-text="Limited edition handcrafted pieces available for this year."></p>
+                <a href="#" class="btn-preorder">Pre-Order Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="preorder-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">SECURE YOUR TIMEPIECE</h2>
+            <p class="modal-subtitle">Leave your details below. Our luxury concierge service will contact you within 24 hours.</p>
+            <form id="preorder-form">
+                <div class="form-group">
+                    <input type="text" placeholder="YOUR FULL NAME" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="EMAIL ADDRESS" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="PHONE NUMBER" required>
+                </div>
+                <button type="submit" class="btn-submit">REQUEST RESERVATION</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="credit-modal" class="modal">
+        <div class="modal-content info-modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">TEMPLATE CREDITS</h2>
+            <p class="modal-subtitle">Premium interactive UI development log.</p>
+            <hr class="modal-divider">
+            <div class="modal-info-grid">
+                <div class="info-item">
+                    <strong>Facebook</strong>
+                    <p>https://www.facebook.com/share/1CjhmRBQHH/</p>
+                </div>
+                <div class="info-item">
+                    <strong>test</strong>
+                    <p>test</p>
+                </div>
+                <div class="info-item">
+                    <strong>test</strong>
+                    <p>test</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile-modal" class="modal">
+        <div class="modal-content info-modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">DEVELOPER PROFILE</h2>
+            <p class="modal-subtitle">test</p>
+            <hr class="modal-divider">
+            <div class="modal-info-grid">
+                <div class="info-item">
+                    <strong>test</strong>
+                    <p>test</p>
+                </div>
+                <div class="info-item">
+                    <strong>test</strong>
+                    <p>test</p>
+                </div>
+                <div class="info-item">
+                    <strong>test</strong>
+                    <p>test</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
